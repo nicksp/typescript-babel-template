@@ -8,6 +8,12 @@
 npm run build
 ```
 
+## Linting the Project
+
+```sh
+npm run lint
+```
+
 ## Type-checking the Project
 
 ```sh

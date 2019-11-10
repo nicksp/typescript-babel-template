@@ -12,6 +12,7 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "typecheck:watch": "npm run typecheck -- --watch",
+    "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
     "build": "npm run build:types && npm run build:src",
     "build:types": "tsc --emitDeclarationOnly",
     "build:src": "babel src --out-dir dist --extensions \".js,.jsx,.ts,.tsx\" --source-maps inline"
@@ -23,6 +24,9 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-typescript": "^7.7.2",
+    "@typescript-eslint/eslint-plugin": "^2.6.1",
+    "@typescript-eslint/parser": "^2.6.1",
+    "eslint": "^6.6.0",
     "typescript": "^3.7.2"
   }
 }
